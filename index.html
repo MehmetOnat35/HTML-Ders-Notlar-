@@ -1,8 +1,103 @@
-<h1>Mehmet ONAT</h1>
-<h2>Hakkımda</h2>
-<p>Her ne kadar lisans olarak Maliye okusamda, iş hayatıma dış ticaret bölümünde devam ettim. Sonrasında Dış ticaret bölümünde yüksek lisans yaptım.Hala geçimimi ihracat yaparak kazanıyorum.
-</p>
-<!-- Aramızda kalsın son bir kaç aydır ihracat işleri iyi gitmiyor, dolayısı ile geçimimi içi piyasadan karşılamaya çalışıyorum-->
-<p>Ama son zamanlarda yurt dışında yaşıyan yakın arkadaşım sayesiinde yazılıma merak sardım. Hobi olarak Front End öğrenmeye başladım</p>
-<!-- ama tabiki bu günün hobileri yarının işleri, ticaretleri olabilir, keza bu işlerde çok gelecek var bence. Bakarsın ilerde manyak bir yazılımcı olurum.-->
-<p>Artık önümüzdeki günlerde göreceğiz, ne kadar kendimizi eğitmişiz.</p>
+<h1>Başlıklar</h1>
+<h2>Alt başlıklar</h2>
+<h2>Pragrafalr</h2>
+<p> ("p") İşaretleri ile paragraf açabiliriz.</p>
+<h2>Açıklamalar</h2>
+<p>Sayfanda görünmesini istemediğimiz konu veya formülleri, (!--Açıklama--)açıklama olarak kayıt edebiliriz</p>
+<!-- Açıklama yazmaya alışmak lazım.-->
+
+<h1>Listeler</h1>
+<!--
+    Sıralı listeler ->1,2,3, ordered list ? -> ol
+    Sıralı olmayan listeler ->*,*,*, unordered list ? ->ul
+    List item -> li 
+-->
+<ol>
+    <li>Liste öğesi *1*</li>
+    <li>Liste öğesi *2*</li>
+    <li>Liste öğesi *3*</li> 
+        <ul style="list-style-type:square">
+            <li>Liste öğesi *1*</li>
+            <li>Liste öğesi *2*</li>
+            <li>Liste öğesi *3*</li>
+        </ul>
+    </li>
+</ol>
+
+<h1>Emmet / Zen Conding:</h1>
+<!-- Etiket isimlerini direkt verebiliyoruz.
+    + kardeş element
+    < içinde öğe oluşur
+    ^ yukarı çık ve öğe oluştur.
+    *çarp -> p*3 
+    lorem ???
+    . -> class
+    # -> id
+-->
+<h2>Kardeş Öğe</h2>
+<!--h1+p*2+h2+p*3-->
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+<h2>İçinde öğe</h2>
+<!--ul>li*5 gibi-->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<h2>yukarı çık ve öğe oluştur</h2>
+<!--ul>li*3^p-->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p></p>
+<h2>Lorem</h2>
+<!-- Lorem ( Anlamsız yazılar)-->
+<p>Lorem ipsum dolor sit.</p>
+<!--ul>li*3>lorem1^^p*2>lorem4^h3>lorem1-->
+<ul>
+    <li>Lorem.</li>
+    <li>Explicabo!</li>
+    <li>Vel?</li>
+</ul>
+<p>Lorem ipsum dolor sit.</p>
+<p>Reiciendis, recusandae. Odio, sunt!</p>
+<h3>Lorem.</h3>
+
+<!--h3.deneme-->
+<h3 class="deneme"></h3>
+<!--h3 .deneme-->
+h3 <div class="deneme"></div>
+
+<!-- h3#idolussun>lorem1-->
+<h3 id="idolussun">Lorem.</h3>
+<!--h3.deneme#idolussun>lorem1-->
+<h3 class="deneme" id="idolussun">Lorem.</h3>
+
+<!--ul>li.tepki-->
+<ul>
+    <li class="tepki"></li>
+</ul>
+
+<!--ul>.tepki*3-->
+<ul>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+</ul>
+
+<!--ul>.text-red*3-->
+<ul>
+    <li class="text-red"></li>
+    <li class="text-red"></li>
+    <li class="text-red"></li>
+</ul>
